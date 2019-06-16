@@ -99,13 +99,13 @@ class NumberPicker extends StatelessWidget {
     _animate(decimalScrollController, decimalValue * itemExtent);
   }
 
-  animateDecimalAndInteger(double valueToSelect) {
+/*  animateDecimalAndInteger(double valueToSelect) {
     print(valueToSelect);
     animateInt(valueToSelect.floor());
     animateDecimal(((valueToSelect - valueToSelect.floorToDouble()) *
             pow(10, decimalPlaces))
         .round());
-  }
+  }*/
 
   //
   //----------------------------- VIEWS -----------------------------
@@ -171,10 +171,10 @@ class NumberPicker extends StatelessWidget {
                         Text(
                           'The longest Movie Name I can Fine For No Reasons'.toUpperCase(),
                           style: TextStyle(color: Colors.white,
-                              fontSize: 30, fontWeight: FontWeight.w900),
+                              fontSize: 25, fontWeight: FontWeight.w900),
 
                         ),
-                        Text('${value.toString()}', style: itemStyle),
+                        Text('${value.toString()}', style: defaultStyle),
                       ],
                     ),
                   );
